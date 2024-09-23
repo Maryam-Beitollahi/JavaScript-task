@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="show-transactions">
+      <h1 class="show-transactions__header">لیست تراکنش ها</h1>
+      <button class="show-transactions__btn">بارگذاری تراکنش ها</button>
+    </div>
+    <div class="transactions hidden">
+      <div class="transactions__header">
+        <h1>لیست تراکنش ها</h1>
+        <form action="" class="transactions__search">
+          <input
+            type="text"
+            placeholder="جستجوی تراکنش..."
+            class="transactions__search-input"
+          />
+        </form>
+      </div>
+      <div class="transactions__list">
+        <table id="singleTransaction">
+           <!-- table-head -->
+         <thead>
+          <tr>
+            <th>ردیف</th>
+            <th>نوع تراکنش</th>
+            <th>مبلغ 
+              <i class="fa-solid fa-chevron-down" data-type="price"></span>
+              </th>
+            <th>شماره پیگیری</th>
+            <th>تاریخ تراکنش 
+              <i class="fa-solid fa-chevron-down" data-type="date"></span>
+              </th>
+          </tr>
+         </thead>
+        <!-- table-body -->
+        <tbody id="transaction-item">
+        
+        </tbody>
+        
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
+
+
